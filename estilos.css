@@ -1,0 +1,47 @@
+#titulo {
+  text-align: center;
+}
+
+#numeros {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#resultado {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#botones {
+  text-align: center;
+}
+
+#operaciones {
+  margin-top: 20px;
+}
+
+button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #34C759;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2E865F;
+}
+
+.operacion {
+  background-color: #6495ED;
+}
+
+.operacion:hover {
+  background-color: #4682B4;
+}
