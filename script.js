@@ -16,6 +16,11 @@ const labelOpcion3 = document.getElementById('label-opcion3');
 const numeros = document.getElementById('numeros');
 const resultadoOpcion = document.getElementById('resultado-opcion');
 
+
+const opcionesd = document.getElementById('opciones');
+
+
+
 let operacionActual = "suma";
 let respuestaCorrecta;
 let num1;
@@ -59,6 +64,7 @@ function actualizarOpciones(operacion, num1, num2) {
 // Función para mostrar los números
 function mostrarNumeros(num1, num2, operacion) {
     let operador;
+    opcionesd.className="dirHor";
     switch (operacion) {
         case 'suma':
             operador = '+';
@@ -71,6 +77,7 @@ function mostrarNumeros(num1, num2, operacion) {
             break;
         case 'division':
             operador = '÷';
+            opcionesd.className="dirVer";
             break;
     }
     numeros.textContent = `${num1} ${operador} ${num2} =`;
