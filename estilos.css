@@ -1,47 +1,112 @@
+
+body {
+    text-align: center;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
 #titulo {
-  text-align: center;
-}
-
-#numeros {
-  font-size: 36px;
-  text-align: center;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-#resultado {
-  font-size: 24px;
-  text-align: center;
-  margin-bottom: 20px;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 #botones {
-  text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#operaciones {
-  margin-top: 20px;
+#opciones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-  margin: 10px;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 10px;
-  background-color: #34C759;
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
+.opcion {
+    margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
-button:hover {
-  background-color: #2E865F;
+.opcion input[type="radio"] {
+    margin-right: 10px;
+}
+
+#label-opcion1, #label-opcion2, #label-opcion3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#botones-enviar-generar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 300px;
+}
+
+#enviar {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#generar {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+#mostrar {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
 }
 
 .operacion {
-  background-color: #6495ED;
+    background-color: #03A9F4;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
 }
 
-.operacion:hover {
-  background-color: #4682B4;
+#numeros {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#resultado-opcion {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+#enviar:hover, #generar:hover, #mostrar:hover, .operacion:hover {
+    background-color: #3e8e41;
 }
