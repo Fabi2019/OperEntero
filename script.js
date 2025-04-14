@@ -123,9 +123,11 @@ enviarBtn.addEventListener('click', () => {
         }
     }
     if (respuesta == respuestaCorrecta) {
-        resultadoOpcion.textContent = ` ${respuesta} ¡Correcto!`;
+        resultadoOpcion.textContent = `¡Correcto!`;
+        resultadoOpcion.className= "correcto";
     } else {
-        resultadoOpcion.textContent = `La respuesta es Incorrecta`;
+        resultadoOpcion.textContent = `¡La respuesta es Incorrecta!`;
+        resultadoOpcion.className= "incorrecto";
     }
 });
 
