@@ -29,8 +29,8 @@ let num2;
 
 // Función para generar números aleatorios
 function generarNumeros() {
-    num1 = Math.floor(Math.random() * 20) + -20;
-    num2 = Math.floor(Math.random() * 20) + -20;
+    num1 = Math.floor(Math.random() * 20) + -10;
+    num2 = Math.floor(Math.random() * 20) + -10;
     return [num1, num2];
 }
 
